@@ -39,3 +39,32 @@ body {
   background: $black;
   overflow-x: hidden;
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+
+  .navbar a {
+    font-size: 1.7rem;
+    color: $light-color;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
+.logo {
+  font-size: 2.5rem;
+  color: $white;
+  font-weight: bolder;
+
+  i {
+    color: $blue;
+    padding-right: 0.5rem;
+  }
+}
