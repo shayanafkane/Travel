@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300;1,400;1,500;1,600&display=swap");
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -35,6 +35,10 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #111;
   overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
 }
 
 .btn {
@@ -104,12 +108,62 @@ body {
   display: none;
 }
 
+.home {
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url("https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg");
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
+
+.home .content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+
+.home .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  color: #aaa;
+  font-weight: 700;
+  line-height: 2;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header {
     padding: 1.5rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 

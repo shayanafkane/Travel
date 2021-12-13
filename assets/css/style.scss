@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300;1,400;1,500;1,600&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,6 +38,10 @@ html {
 body {
   background: $black;
   overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
 }
 
 .btn {
@@ -97,12 +101,56 @@ body {
   display: none;
 }
 
+.home {
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: linear-gradient($black-bg , $black-bg), url('https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+
+  .content{
+    text-align: center;
+
+    span{
+      
+      font-weight: bolder;
+      color: transparent;
+      -webkit-text-stroke: .1rem $white;
+      font-size: 4vw;
+      display: block;
+    }
+
+    h3{
+      font-size: 6vw;
+      color: $white;
+    }
+
+    p{
+      max-width: 60rem;
+      margin: 1rem auto;
+      font-size: 1.5rem;
+      color: $light-color;
+      font-weight: 700;
+      line-height: 2;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header {
     padding: 1.5rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
