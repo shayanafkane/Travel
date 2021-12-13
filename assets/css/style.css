@@ -37,6 +37,24 @@ body {
   overflow-x: hidden;
 }
 
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #29d9d5;
+  border: 0.2rem solid #29d9d5;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #29d9d5;
+  color: rgba(17, 17, 17, 0.7);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -58,9 +76,14 @@ body {
 
 .header .navbar a {
   font-size: 1.7rem;
-  color: #0e0d0d;
+  color: #aaa;
   display: inline-block;
   margin: 0 1rem;
+  font-weight: 800;
+}
+
+.header .navbar a:hover {
+  color: #111;
 }
 
 .logo {
@@ -72,5 +95,51 @@ body {
 .logo i {
   color: #29d9d5;
   padding-right: 0.5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #222;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

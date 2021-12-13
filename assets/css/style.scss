@@ -14,7 +14,7 @@
 $blue: #29d9d5;
 $black: #111;
 $white: #fff;
-$light-color: rgb(14, 13, 13);
+$light-color: #aaa;
 $bg-color: #222;
 $black-bg: rgba(17, 17, 17, 0.7);
 $border: 0.2rem solid $blue;
@@ -39,6 +39,24 @@ body {
   background: $black;
   overflow-x: hidden;
 }
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: $blue;
+  border: $border;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+  font-weight: 700;
+  &:hover {
+    background: $blue;
+    color: $black-bg;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -56,6 +74,10 @@ body {
     color: $light-color;
     display: inline-block;
     margin: 0 1rem;
+    font-weight: 800;
+    &:hover {
+      color: $black;
+    }
   }
 }
 .logo {
@@ -66,5 +88,48 @@ body {
   i {
     color: $blue;
     padding-right: 0.5rem;
+  }
+}
+#menu-btn {
+  font-size: 2.5rem;
+  color: $white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header {
+    .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: $bg-color;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
   }
 }
