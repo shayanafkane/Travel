@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300;1,400;1,500;1,600&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,18 +21,21 @@ $border: 0.2rem solid $blue;
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 
   &::-webkit-scrollbar {
     width: 1rem;
+    border-radius: 10px;
   }
   &::-webkit-scrollbar-track {
     background: $black;
+    
   }
   &::-webkit-scrollbar-thumb {
     background: $blue;
+    border-radius: 10px;
   }
 }
 body {
@@ -179,5 +182,53 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+.book-form{
+  width: 80%;
+  margin: 1rem auto;
+  margin-top: -5rem;
+  background: $bg-color;
+  border-radius: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .3);
+
+
+  form{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-weight: 800;
+
+    .inputBox{
+      flex: 1 1 15rem;
+
+      span{
+        font-size: 1.4rem;
+        color: $light-color;
+
+      }
+
+      input{
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        border-radius: 5rem;
+        font-size: 1.6rem;
+        border: $border;
+        color: $light-color;
+        text-transform: none;
+        font-weight: 800;
+
+        &::placeholder{
+          font-weight: bolder;
+        }
+
+      }
+    }
+
+    .btn{
+      flex: 1 1 15rem;
+
+    }
   }
 }
