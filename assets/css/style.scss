@@ -21,7 +21,7 @@ $border: 0.2rem solid $blue;
 
 html {
   font-size: 62.5%;
-  
+
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 
@@ -31,7 +31,6 @@ html {
   }
   &::-webkit-scrollbar-track {
     background: $black;
-    
   }
   &::-webkit-scrollbar-thumb {
     background: $blue;
@@ -109,7 +108,8 @@ section {
   margin-top: 10rem;
   width: 90%;
   border-radius: 1rem;
-  background: linear-gradient($black-bg , $black-bg), url('https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg');
+  background: linear-gradient($black-bg, $black-bg),
+    url("https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -117,24 +117,23 @@ section {
   align-items: center;
   justify-content: center;
 
-  .content{
+  .content {
     text-align: center;
 
-    span{
-      
+    span {
       font-weight: bolder;
       color: transparent;
-      -webkit-text-stroke: .1rem $white;
+      -webkit-text-stroke: 0.1rem $white;
       font-size: 4vw;
       display: block;
     }
 
-    h3{
+    h3 {
       font-size: 6vw;
       color: $white;
     }
 
-    p{
+    p {
       max-width: 60rem;
       margin: 1rem auto;
       font-size: 1.5rem;
@@ -184,32 +183,30 @@ section {
     font-size: 50%;
   }
 }
-.book-form{
+.book-form {
   width: 80%;
   margin: 1rem auto;
   margin-top: -5rem;
   background: $bg-color;
   border-radius: 1rem;
-  box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .3);
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
 
-
-  form{
+  form {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 1.5rem;
     font-weight: 800;
 
-    .inputBox{
+    .inputBox {
       flex: 1 1 15rem;
 
-      span{
+      span {
         font-size: 1.4rem;
         color: $light-color;
-
       }
 
-      input{
+      input {
         width: 100%;
         padding: 1.2rem 1.4rem;
         border-radius: 5rem;
@@ -219,16 +216,86 @@ section {
         text-transform: none;
         font-weight: 800;
 
-        &::placeholder{
+        &::placeholder {
           font-weight: bolder;
         }
-
       }
     }
 
-    .btn{
+    .btn {
       flex: 1 1 15rem;
-
     }
   }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+
+  .video-container {
+    flex: 1 1 42rem;
+    video {
+      border-radius: 1rem;
+      width: 100%;
+    }
+  }
+
+  .controls{
+    text-align: center;
+    padding: 2rem 0;
+
+
+    span{
+      display: inline-block;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background: $white;
+      cursor: pointer;
+      margin: .7rem;
+
+      %:hover{
+        background: $blue;
+      }
+    }
+  }
+
+  .content {
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+    span {
+      color: $blue;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    h3 {
+      color: $white;
+      font-size: 4rem;
+      margin-top: 0.5rem;
+      font-weight: 800;
+    }
+    p {
+      
+      font-size: 1.5rem;
+      color: $light-color;
+      font-weight: 700;
+      line-height: 2;
+    }
+  }
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+
+  }
+
+  .about .content h3{
+    font-size: 3.5rem;
+  }
+  
 }
