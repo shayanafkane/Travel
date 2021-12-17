@@ -156,6 +156,9 @@ section {
   }
 }
 @media (max-width: 768px) {
+  .btn {
+    margin-top: 0;
+  }
   #menu-btn {
     display: inline-block;
   }
@@ -243,21 +246,20 @@ section {
     }
   }
 
-  .controls{
+  .controls {
     text-align: center;
     padding: 2rem 0;
 
-
-    span{
+    span {
       display: inline-block;
       height: 2rem;
       width: 2rem;
       border-radius: 50%;
       background: $white;
       cursor: pointer;
-      margin: .7rem;
+      margin: 0.7rem;
 
-      %:hover{
+      %:hover {
         background: $blue;
       }
     }
@@ -278,7 +280,6 @@ section {
       font-weight: 800;
     }
     p {
-      
       font-size: 1.5rem;
       color: $light-color;
       font-weight: 700;
@@ -287,15 +288,12 @@ section {
   }
 }
 
-@media (max-width:450px){
-
-  html{
+@media (max-width: 450px) {
+  html {
     font-size: 50%;
-
   }
 
-  .about .content h3{
+  .about .content h3 {
     font-size: 3.5rem;
   }
-  
 }
