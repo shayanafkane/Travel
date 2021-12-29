@@ -417,7 +417,7 @@ section {
 }
 
 .destination .box .content a i {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 @media (max-width: 450px) {
@@ -427,5 +427,41 @@ section {
   .about .content h3 {
     font-size: 3.5rem;
   }
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  background: #222;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  border: 0.2rem solid #111;
+}
+
+.services .box-container .box:hover {
+  border: 0.2rem solid #29d9d5;
+}
+
+.services .box-container .box i {
+  font-size: 5rem;
+  color: #29d9d5;
+  margin-bottom: 1rem;
+}
+
+.services .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.services .box-container .box p {
+  color: #fff;
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */
