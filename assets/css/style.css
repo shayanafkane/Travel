@@ -464,4 +464,34 @@ section {
   color: #fff;
   font-weight: 800;
 }
+
+.gallery .box-container {
+  -webkit-columns: 3 25rem;
+          columns: 3 25rem;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.gallery .box {
+  margin-bottom: 1rem;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+}
+
+.gallery .box img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery .box span {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.gallery .box h3 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

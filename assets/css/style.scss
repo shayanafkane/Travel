@@ -405,3 +405,30 @@ section {
     }
   }
 }
+.gallery{
+
+  .box-container{
+    columns: 3 25rem;
+    column-gap: 1.5rem;
+
+  }
+  .box{
+    margin-bottom: 1rem;
+    break-inside: avoid;
+
+    img{
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    span{
+      font-size: 1.4rem;
+      color: $white;
+    }
+    h3{
+      margin-top: 0.5rem;
+      font-size: 2rem;
+      color: $white;
+    }
+  }
+}
