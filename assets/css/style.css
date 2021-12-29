@@ -213,6 +213,11 @@ section {
   }
 }
 
+.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
