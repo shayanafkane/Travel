@@ -499,4 +499,84 @@ section {
   font-size: 2rem;
   color: #fff;
 }
+
+.blogs .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  border-radius: 1rem;
+  background: #222;
+  overflow: hidden;
+}
+
+.blogs .box-container .box:hover .images img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .box-container .box .images {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogs .box-container .box .images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.content .link {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.content .link:hover {
+  color: #29d9d5;
+}
+
+.content .icon {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 800;
+}
+
+.content .icon a {
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.content .icon a:hover {
+  color: #29d9d5;
+}
+
+.content .icon a i {
+  padding-right: 0.5rem;
+  color: #29d9d5;
+}
 /*# sourceMappingURL=style.css.map */
