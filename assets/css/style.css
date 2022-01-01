@@ -574,6 +574,10 @@ section {
   color: #29d9d5;
 }
 
+.footer .btn {
+  margin-top: 10px;
+}
+
 .footer .box-container {
   display: -ms-grid;
   display: grid;

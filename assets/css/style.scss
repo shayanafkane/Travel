@@ -494,6 +494,9 @@ section {
   }
 }
 .footer {
+  .btn{
+    margin-top: 10px;
+  }
   .box-container {
     @include grid(25rem);
 
@@ -566,6 +569,8 @@ section {
         color: $light-color;
         margin-top: 1rem;
         padding: 1.2rem 1.4rem;
+
+
         &::placeholder {
           color: $light-color;
           font-weight: 800;
@@ -621,6 +626,5 @@ section {
   }
   .banner .content h3{
     font-size: 3rem;
-    
   }
 }
