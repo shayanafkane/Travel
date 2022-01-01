@@ -218,12 +218,6 @@ section {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
 }
 
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 .book-form {
   width: 80%;
   margin: 1rem auto;
@@ -623,7 +617,7 @@ section {
   border-radius: 50%;
   border: 0.2rem solid #29d9d5;
   color: #29d9d5;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   text-align: center;
 }
 
@@ -649,7 +643,7 @@ section {
 }
 
 .footer .box-container .box .links i {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   color: #29d9d5;
 }
 
@@ -697,5 +691,44 @@ section {
 .credit span {
   color: #29d9d5;
   font-weight: 800;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url("https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg");
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("https://res.cloudinary.com/dpzrxnav1/image/upload/v1639422846/test/3120654_cexgfb.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner .content span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  color: #aaa;
+  font-weight: 700;
+  line-height: 2;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .banner .content h3 {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
